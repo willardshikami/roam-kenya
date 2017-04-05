@@ -1,2 +1,2 @@
 # roam-kenya
-Travel guide lookbook
+Travel guide LOOKBOOK for Kenyan Cities.
