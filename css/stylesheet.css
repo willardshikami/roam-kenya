@@ -59,3 +59,36 @@ table {
   BODY
   ========================================
 */
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+
+
+/*
+  ========================================
+  HEADER 
+  ========================================
+*/
+.image-header{
+  background-image: url(../images/homepage.jpg);
+  background-size: cover;
+  height: 600px;
+}
+
+.header-title{
+  padding-top: 200px;
+}
+
+.header-title h1{
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+
+
