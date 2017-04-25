@@ -72,14 +72,24 @@ table {
   ========================================
 */
 
-.header{
-  
-}
-
 .image-header{
   background-image: url(../images/homepage.jpg);
   background-size: cover;
   height: 600px;
+}
+
+.header .logo{
+  float: left;
+  
+}
+
+.header nav ul{
+  text-align: right;
+
+}
+
+.header nav ul li{
+  display: inline-block;
 }
 
 .header-title{
