@@ -71,6 +71,11 @@ table {
   HEADER 
   ========================================
 */
+
+.header{
+  
+}
+
 .image-header{
   background-image: url(../images/homepage.jpg);
   background-size: cover;
