@@ -75,7 +75,7 @@ table {
 .image-header{
   background-image: url(../images/homepage.jpg);
   background-size: cover;
-  height: 600px;
+  height: 630px;
 }
 
 .header{
@@ -117,14 +117,22 @@ table {
 	font-family: 'Nunito San', sans-serif;
 }
 
-
-
 .nav-bar a{
 	color: #FFF;
 }
 
 footer{
-	
+	position: absolute;
+	right: 0;
+  	bottom: 0;
+  	left: 0;
+  	padding: 1rem;
+	text-align: center;
+}
+
+footer p{
+	color: #FFF;
+	font-size: 12px;
 }
 
 
