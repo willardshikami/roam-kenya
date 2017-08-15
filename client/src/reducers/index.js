@@ -4,3 +4,5 @@ import CityReducer from './reducer-cities';
  const allReducers = combineReducers({
      cities : CityReducer
  });
+
+ export default allReducers;
