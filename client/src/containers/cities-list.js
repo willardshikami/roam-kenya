@@ -7,13 +7,19 @@ import {connect} from 'react-redux';
 
 class CityList extends Component {
 	loadCities(){
-		
+		return this.props.cities.map((city) =>{
+			return(
+				<div>
+
+				</div>
+			);
+		});
 	}
 	render() {
 		return ( 
-			<ul>
-
-			</ul>
+			<div className="citylist">
+				{this.loadCities()}
+			</div>
 		);
 	}
 }
