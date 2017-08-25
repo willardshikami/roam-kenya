@@ -13,7 +13,7 @@
     padding: 200px 0;
 }
 
-.hero_content h1 {
+.hero_content h1{
     font-size: 80px;
     font-weight: 700;
 }
@@ -27,7 +27,8 @@
 /*=========================================
 HISTORY SECTION  
 ==========================================*/
-.history_title{
+.history_title,
+.the_cities_title{
     font-family: 'Quicksand', sans-serif;
     margin: 50px 20px;
     text-align: center;
