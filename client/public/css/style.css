@@ -114,6 +114,8 @@ a:focus {
 
 .our_logo {
     color: #666;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
@@ -147,7 +149,7 @@ FOOTER
 ==========================================*/
 #footer{
     background: #444444;
-    padding: 100px 0px 100px 0px;
+    padding: 70px 0px 70px 0px;
     text-align: center;
 }
 
