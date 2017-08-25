@@ -19,6 +19,16 @@ class Home extends Component {
               <p>The Pride of Africa</p>
             </div>
         </div>
+
+        <div className="container history">
+          <div className="history_title">
+            <h1>About Kenya</h1>
+            <hr/>
+          </div>
+          <div className="history_narrative">
+          <p>Kenya, officially the Republic of Kenya, is a country in Africa and a founding member of the East African Community. Its capital and largest city is Nairobi. Kenya's territory lies on the equator and overlies the East African Rift covering a diverse and expansive terrain that extends roughly from Lake Victoria to Lake Turkana and further south-east to the Indian Ocean.</p>
+        </div>
+        </div>
       </div>
     );
   }

@@ -1,3 +1,7 @@
+.home{
+    font-family: 'Averta', sans-serif; 
+}
+
 .hero img {
     width: 100%;
 }
@@ -18,4 +22,25 @@
     font-size: 40px;
     font-style: italic;
     text-align: center;
+}
+
+/*=========================================
+HISTORY SECTION  
+==========================================*/
+.history_title{
+    font-family: 'Quicksand', sans-serif;
+    margin: 50px 20px;
+    text-align: center;
+}
+
+hr{
+    width: 5%;
+    border: 1px solid #EF0D33;
+}
+
+.history_narrative{
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 50px; 
 }
