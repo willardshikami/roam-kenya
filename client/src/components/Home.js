@@ -19,8 +19,8 @@ class Home extends Component {
               <p>The Pride of Africa</p>
             </div>
         </div>
-
-        <div className="container history">
+        <div className="container">
+        <div className="history">
           <div className="history_title">
             <h1>About Kenya</h1>
             <hr/>
@@ -35,6 +35,7 @@ class Home extends Component {
             <hr/>
           </div>
           <CityList/>
+        </div>
         </div>
       </div>
     );

@@ -45,3 +45,16 @@ hr{
     line-height: 35px;
     margin-bottom: 50px; 
 }
+
+/*=========================================
+CITIES SECTION
+==========================================*/
+.theCities{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card img{
+    width: 30%;
+}

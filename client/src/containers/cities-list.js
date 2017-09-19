@@ -13,7 +13,14 @@ class CityList extends Component {
 				<div className="theCities">
 					<Grid>
 						<Row>
-						<Col sm={6} md={3}/><p>This List</p>
+						<Col sm={6} md={3}/>
+						<div key={city.id} className="card">
+							<img src={city.landing_image_url}/>
+							<div className="">
+								<h1>{city.city_name}</h1>
+								<p>{}</p>
+							</div>
+						</div>
 						</Row>
 					</Grid>
 				</div>
@@ -28,6 +35,7 @@ class CityList extends Component {
 		);
 	}
 }
+
 
 function mapStateToProps(state){
 	return{
