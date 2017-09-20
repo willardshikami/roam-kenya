@@ -7,7 +7,8 @@ export default function(){
             population: "3,375,000(2009 est.)",
             area: "696km2",
             description: "Nairobi has a population of three million plus. Situated on the Nairobi River, the city is not only the largest and fastest growing city in Kenya, but one of the largest in Africa.", 
-            landing_image_url: "http://wikitravel.org/upload/shared//1/15/Nairobi_at_night_with_the_Hilton_Hotel_in_the_background.jpeg"
+            card_image: "https://i.pinimg.com/564x/ae/37/79/ae377980982c32971ed9143e8a7b28b7.jpg",
+            landing_image_url: ""
         },
         {
             id: 2,

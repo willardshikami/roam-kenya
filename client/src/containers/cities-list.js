@@ -15,8 +15,8 @@ class CityList extends Component {
 						<Row>
 						<Col sm={6} md={3}/>
 						<div key={city.id} className="card">
-							<img src={city.landing_image_url}/>
-							<div className="">
+							<img src={city.card_image}/>
+							<div className="city_content">
 								<h1>{city.city_name}</h1>
 								<p>{}</p>
 							</div>
@@ -29,8 +29,8 @@ class CityList extends Component {
 	}
 	render() {
 		return ( 
-			<div className="citylist">
-				{this.loadCities()}
+			<div className="cityList">
+				{this.loadCities()} 
 			</div>
 		);
 	}

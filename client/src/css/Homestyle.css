@@ -14,7 +14,7 @@
 }
 
 .hero_content h1{
-    font-size: 50px;
+    font-size: 70px;
     font-weight: 600;
 }
 
@@ -26,42 +26,49 @@
 .hero_content .second{
     font-size: 25px;
     font-weight: 400;
-    padding: 15px 20px;
 }
 
 /*=========================================
 HISTORY SECTION  
 ==========================================*/
-.history_title,
-.the_cities_title{
+.history_title h1{
+    color: #111517;
     font-family: 'Clan Web';
-    margin: 50px 20px;
-    text-align: center;
-    font-weight: 500;
-}
-
-hr{
-    width: 5%;
-    border: 1px solid #EF0D33;
+    font-weight: 100;
+    font-size: 50px;
+    margin-top: 100px;
+    margin-bottom: 40px;
 }
 
 .history_narrative{
     font-family: 'Clan Web';
     font-weight: 400;
-    font-size: 25px;
-    line-height: 45px;
-    margin-bottom: 50px; 
+    font-size: 20px;
+    line-height: 50px;
+    margin-bottom: 100px; 
 }
+
 
 /*=========================================
 CITIES SECTION
 ==========================================*/
-.theCities{
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+.the_cities_title h1{
+    color: #111517;
+    font-family: 'Clan Web';
+    font-weight: 100;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
 }
 
+
+/*
+width: 40%;
+height: 300px;
+*/
+
 .card img{
-    width: 30%;
+    float: left;
 }
+
