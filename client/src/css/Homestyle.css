@@ -1,5 +1,5 @@
 .home{
-    font-family: 'Mark Web Pro'; 
+    font-family: 'Clan Web'; 
 }
 
 .hero img {
@@ -8,20 +8,25 @@
 
 .hero_content {
     color: #FFFFFF;
-    font-family: 'NeuzeitGro';
+    font-family: 'Clan Web';
+    padding: 250px 0;
     text-align: center;
-    padding: 200px 0;
 }
 
 .hero_content h1{
-    font-size: 80px;
-    font-weight: 700;
+    font-size: 50px;
+    font-weight: 600;
 }
 
-.hero_content p{
-    font-size: 40px;
-    font-style: italic;
-    text-align: center;
+.hero_content .first{
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.hero_content .second{
+    font-size: 25px;
+    font-weight: 400;
+    padding: 15px 20px;
 }
 
 /*=========================================
@@ -29,10 +34,10 @@ HISTORY SECTION
 ==========================================*/
 .history_title,
 .the_cities_title{
-    font-family: 'NeuzeitGro';
+    font-family: 'Clan Web';
     margin: 50px 20px;
     text-align: center;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 hr{
@@ -41,8 +46,8 @@ hr{
 }
 
 .history_narrative{
-    font-family: 'Mark Web Pro';
-    font-weight: 300;
+    font-family: 'Clan Web';
+    font-weight: 400;
     font-size: 25px;
     line-height: 45px;
     margin-bottom: 50px; 
