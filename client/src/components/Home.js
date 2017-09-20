@@ -15,7 +15,7 @@ class Home extends Component {
       <div className="Home">
         <div className="hero" style={heroStyle}>
             <div className="hero_content">
-              <h1>KARIBU KENYA</h1>
+              <h1>Karibu Kenya</h1>
               <p>The Pride of Africa</p>
             </div>
         </div>

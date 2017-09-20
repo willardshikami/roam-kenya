@@ -1,5 +1,5 @@
 .home{
-    font-family: 'Averta', sans-serif; 
+    font-family: 'Mark Web Pro'; 
 }
 
 .hero img {
@@ -8,7 +8,7 @@
 
 .hero_content {
     color: #FFFFFF;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'NeuzeitGro';
     text-align: center;
     padding: 200px 0;
 }
@@ -29,9 +29,10 @@ HISTORY SECTION
 ==========================================*/
 .history_title,
 .the_cities_title{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'NeuzeitGro';
     margin: 50px 20px;
     text-align: center;
+    font-weight: 400;
 }
 
 hr{
@@ -40,9 +41,10 @@ hr{
 }
 
 .history_narrative{
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Mark Web Pro';
+    font-weight: 300;
     font-size: 25px;
-    line-height: 35px;
+    line-height: 45px;
     margin-bottom: 50px; 
 }
 

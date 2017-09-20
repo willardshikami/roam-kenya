@@ -16,7 +16,7 @@ body {
     padding: 0;
     margin-left: 0;
     margin-right: 0;
-    font-family: 'Averta', sans-serif;
+    font-family: 'Mark Web Pro';
     font-weight: 300;
 }
 /*==========================================
@@ -83,11 +83,11 @@ a:focus {
 
 .menu-scroll .main_menu .navbar-nav > li > a {
 	color:#666;
-	font-family: 'Averta', sans-serif;
+	font-family: 'Mark Web Pro';
 }
 
 .menu-scroll .main_menu .navbar-nav > li > a:hover {
-	color:#6FB048;
+	color:#111517;
 }
 
 .menu-scroll a.our_logo{
@@ -114,8 +114,8 @@ a:focus {
 
 .our_logo {
     color: #666;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
+    font-family: 'NeuzeitGro';
+    font-weight: 900;
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
