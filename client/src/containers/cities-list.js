@@ -1,36 +1,31 @@
 import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-import {Grid, Row, Col} from 'react-bootstrap'
+import {Grid, Row, Col} from 'react-bootstrap';
+import Homestyle from '../css/Homestyle.css';
 
 
 
 
 class CityList extends Component {
-	loadCities(){
-		return this.props.cities.map((city) =>{
-			return(
-				<div className="theCities">
-					<Grid>
-						<Row>
-						<Col sm={6} md={3}/>
-						<div key={city.id} className="card">
-							<img src={city.card_image}/>
-							<div className="city_content">
-								<h1>{city.city_name}</h1>
-								<p>{}</p>
-							</div>
-						</div>
-						</Row>
-					</Grid>
-				</div>
-			);
-		});
-	}
 	render() {
 		return ( 
-			<div className="cityList">
-				{this.loadCities()} 
+			<div className="city-list">
+				{this.props.cities.map((city) => (
+					<Grid>
+					<Row className="show-grid">
+					<Col  xs={6} md={4}>
+					<div key={city.id} className="card">
+						<img src={city.card_image}/>
+						<div className="city_content">
+							<h1>{city.city_name}</h1>
+							<p>{}</p>
+						</div>
+					</div>
+					</Col>
+					</Row>
+				</Grid>
+				))} 
 			</div>
 		);
 	}
