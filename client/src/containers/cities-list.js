@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
-
+import { Grid, Icon, Button, Card, Image } from 'semantic-ui-react'
 import Homestyle from '../css/Homestyle.css';
 
 
@@ -9,13 +9,22 @@ import Homestyle from '../css/Homestyle.css';
 
 class CityList extends Component {
 
+
+
 	loadCities() { 
 		return this.props.cities.map((city) => {
 			return(
-						<li key={city.id}>
-							<img src={city.card_image} />
-							<h1>{city.city_name}</h1>
-						</li>
+					<li className="child">
+					
+
+						<Card key={city.id}
+    					image={city.card_image}
+   		 				header={city.city_name}
+    					meta= {city.county}
+    					description={city.shortdesc}
+						/>
+						
+					</li>
 			);
 	});
 }
@@ -23,8 +32,9 @@ class CityList extends Component {
 
 	render() {
 		return ( 
-			<ul className="card">
-				{this.loadCities()}
+
+			<ul className="parent">
+					{this.loadCities()}
 			</ul>
 		);
 	}
