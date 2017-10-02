@@ -14,14 +14,14 @@ class Home extends Component {
     return (
       <div className="Home">
         <div className="hero" style={heroStyle}>
-            <div className="container hero_content">
+            <div className="ui container hero_content">
               <p className="second">Find Essential Information for your next Journey</p>
               <h1>Karibu Kenya</h1>
               <p className="first">The Pride of Africa</p>
             </div>
         </div>
         
-        <div className="container">
+        <div className="ui container">
         <div className="history">
           <div className="history_title">
             <h1>About Kenya</h1>

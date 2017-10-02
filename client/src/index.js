@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 import allReducers from './reducers';
+import 'semantic-ui-css/semantic.min.css';
 import index from './css/index.css';
 import Main from './components/Main';
 import registerServiceWorker from './registerServiceWorker';

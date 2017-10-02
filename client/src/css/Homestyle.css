@@ -66,11 +66,10 @@ CITIES SECTION
 }
 
 
-/*
-width: 40%;
-height: 300px;
-*/
-
 .card img {
 	width: 100%;
+}
+
+li{
+  list-style: none;
 }
