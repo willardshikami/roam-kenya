@@ -1,0 +1,10 @@
+
+//Universal
+export const FETCHING = 'FETCHING'
+export const FETCH_COMPLETE = 'FETCH_COMPLETE'
+export const GENERAL_ERROR = 'GENERAL_ERROR'
+
+//Users
+export const GET_USERS_SUCCESS = 'GET_USERS_SUCCESS';
+export const GET_USER_SUCCESS = 'GET_USER_SUCCESS';
+export const UPDATE_USER_SUCCESS ='UPDATE_USER_SUCCESS';

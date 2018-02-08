@@ -1,0 +1,19 @@
+{
+  "name": "roam-kenya",
+  "version": "1.0.0",
+  "description": "Find places to visit.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willardshikami/roam-kenya.git"
+  },
+  "author": "Willard Shikami",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willardshikami/roam-kenya/issues" 
+  },
+  "homepage": "https://github.com/willardshikami/roam-kenya#readme"
+}
