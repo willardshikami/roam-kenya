@@ -1,179 +1,47 @@
-<!DOCTYPE html>
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en">
-<!--<![endif]-->
+<!doctype html>
+<html lang="en" class="nojs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://use.fontawesome.com/8c84d27613.js"></script>
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Roam Kenya</title>
-	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content="" />
-	<meta property="og:image" content="" />
-	<meta property="og:url" content="" />
-	<meta property="og:site_name" content="" />
-	<meta property="og:description" content="" />
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" />
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="fonts/stylesheet.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<!--Custom css -->
-	<link rel="stylesheet" href="css/style.css">
-	<!--Responsive css-->
-	<link rel="stylesheet" href="css/responsive.css" />
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
-	<script src="https://use.fontawesome.com/8c84d27613.js"></script>
-	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!--Google Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-	<!--Bootstrap-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-	  crossorigin="anonymous">
+    <!--React Toastr-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.css">
 
-	<!--Google Fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-	  rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!--React Redux Toastr-->
+    <link href="https://diegoddox.github.io/react-redux-toastr/5.0/react-redux-toastr.min.css" rel="stylesheet" type="text/css">
+    
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<!--Google Icons-->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-	<!--React Toastr-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.css">
-
-	<!--React Redux Toastr-->
-	<link href="https://diegoddox.github.io/react-redux-toastr/5.0/react-redux-toastr.min.css" rel="stylesheet" type="text/css">
-
-	<!--Font Awesome-->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<!-- load MUI -->
-	<link href="//cdn.muicss.com/mui-0.9.18/css/mui.min.css" rel="stylesheet" type="text/css" />
-	<script src="//cdn.muicss.com/mui-0.9.18/js/mui.min.js"></script>
+    <!-- load MUI -->
+    <link href="//cdn.muicss.com/mui-0.9.18/css/mui.min.css" rel="stylesheet" type="text/css" />
+    <script src="//cdn.muicss.com/mui-0.9.18/js/mui.min.js"></script>
+    
+    <title>ROAM KENYA</title>
 
 
+    <!--Avoid DOM Flickering on State Change-->
+    <script type="text/javascript">
+        (function(B,C){B[C]=B[C].replace(/bnojsb/,'js')})(document.documentElement,'className');
+    </script>
 
-	<!--Modenizr css-->
-	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
 
-	<!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
-<![endif]-->
-
-<!--Avoid DOM Flickering on State Change-->
-<script type="text/javascript">
-	(function(B,C){B[C]=B[C].replace(/bnojsb/,'js')})(document.documentElement,'className');
-</script>
-
-	<!-- Favicons -->
-	<link rel="shortcut icon" href="img/favicon.ico">
-	<link rel="apple-touch-icon" sizes="32x32" href="img/favicon-32x32.png" type="image/jpg">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon.png" type="image/jpg">
-	<link rel="icon" href="img/favicon.png" type="image/jpg">
-
-	<!-- Made by MOONSHOT STUDIO http://moonshotstudio.co -->
-
-</head>
-
-<body>
-	<div class='preloader'>
-		<div class='loaded'>&nbsp;</div>
-	</div>
-	<header id="header" class="navbar-fixed-top">
-		<div class="">
-			<div class="main_menu wow fadeInDown" data-wow-duration="2s">
-
-				<nav class="navbar navbar-default" role="navigation">
-					<div class="container">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>
-							<a class="navbar-brand navbar-brand-left" href="#">
-								<img src="./img/healthix_logo.png" alt="Logo">
-							</a>
-						</div>
-
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse" id="navbar-brand-centered">
-							<ul class="nav navbar-nav navbar-right">
-								<li>
-									<a href="#">How it works</a>
-								</li>
-								<li>
-									<a href="#">About Us</a>
-								</li>
-								<li>
-									<a href="#">Why Healthix</a>
-								</li>
-								<li>
-									<a href="#">Our Partners</a>
-								</li>
-								<li>
-									<a href="#">Contact Us</a>
-								</li>
-							</ul>
-						</div>
-						<!-- /.navbar-collapse -->
-					</div>
-					<!-- /.container-fluid -->
-				</nav>
-			</div>
-		</div>
-	</header>
-	<!--Home page style-->
-
-	<!-- Sections -->
-	<section id="hero" class="">
-		<div class="hero_overlay">
-			<div class="container">
-				<div class="hero_content">
-					<h2>Connecting Healthcare Players</h2>
-					<p>Our simple, stress-free platform connects the different Healthcare players to ease business processes.</p>
-					<div class="hero-btn">
-						<a href="" class="btn btn-md">Learn More</a>
-					</div>
-				</div>
-			</div>
-			<!-- /container -->
-		</div>
-	</section>
-
-	<div>
-			<div id="root"></div>
-	</div>
-
-
-
-	<!--Footer-->
-	<footer id="footer" class="">
-		<div class="container">
-			<div class="copyright">
-				<small class="wow zoomIn" data-wow-duration="1s"> Copyright &copy; Roam Kenya. All Rights Reserved</small>
-			</div>
-		</div>
-		<!-- End footer bottom -->
-	</footer>
-
-
-	<script src="js/vendor/jquery-1.11.2.min.js"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
-</body>
-
+  </body>
 </html>
