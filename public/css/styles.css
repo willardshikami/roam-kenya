@@ -568,14 +568,21 @@ Hero
     color: #fff;
 }
 .hero h1 {
-    margin: 200px 0 45px 0;
+    margin: 200px 0 5px 0;
     font-weight: 300;
-    font-size: px;
+    font-size: 60px;
+    line-height: 40px;
 }
 .hero h1 span {
     display: inline-block;
     color: #a1a9b0;
 }
+
+.hero p {
+    font-weight: 300;
+    font-size: 40px;
+}
+
 #home {
     width: 100%;
     height: 100%;

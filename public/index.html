@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
 <!--<![endif]-->
-<html lang="en" class="no-js">
 
 <head>
 	<meta charset="utf-8">
@@ -22,21 +20,25 @@
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
-	<!-- CSS -->
-	<script src="js/modernizr.custom.js"></script>
-	<link href="css/jquery.fancybox.css" rel="stylesheet">
-	<link href="css/flickity.css" rel="stylesheet">
-	<link href="css/animate.css" rel="stylesheet">
-	
+
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!--Custom css -->
+	<link rel="stylesheet" href="css/style.css">
+	<!--Responsive css-->
+	<link rel="stylesheet" href="css/responsive.css" />
+
 	<script src="https://use.fontawesome.com/8c84d27613.js"></script>
 	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
 	<!--Bootstrap-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	  crossorigin="anonymous">
 
 	<!--Google Fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+	  rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
 	<!--Google Icons-->
@@ -48,7 +50,7 @@
 
 	<!--React Redux Toastr-->
 	<link href="https://diegoddox.github.io/react-redux-toastr/5.0/react-redux-toastr.min.css" rel="stylesheet" type="text/css">
-	
+
 	<!--Font Awesome-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -56,113 +58,122 @@
 	<link href="//cdn.muicss.com/mui-0.9.18/css/mui.min.css" rel="stylesheet" type="text/css" />
 	<script src="//cdn.muicss.com/mui-0.9.18/js/mui.min.js"></script>
 
-	<link href="css/styles.css" rel="stylesheet">
-	<link href="css/queries.css" rel="stylesheet">
-	
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+
+	<!--Modenizr css-->
+	<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
 	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+<![endif]-->
+
+<!--Avoid DOM Flickering on State Change-->
+<script type="text/javascript">
+	(function(B,C){B[C]=B[C].replace(/bnojsb/,'js')})(document.documentElement,'className');
+</script>
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="img/favicon.ico">
+	<link rel="apple-touch-icon" sizes="32x32" href="img/favicon-32x32.png" type="image/jpg">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon.png" type="image/jpg">
+	<link rel="icon" href="img/favicon.png" type="image/jpg">
+
+	<!-- Made by MOONSHOT STUDIO http://moonshotstudio.co -->
+
 </head>
 
 <body>
-	<!--[if lt IE 7]>
-		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-		<![endif]-->
-	<!-- open/close -->
-	<header>
-		<section class="hero">
-			<div class="texture-overlay"></div>
+	<div class='preloader'>
+		<div class='loaded'>&nbsp;</div>
+	</div>
+	<header id="header" class="navbar-fixed-top">
+		<div class="">
+			<div class="main_menu wow fadeInDown" data-wow-duration="2s">
+
+				<nav class="navbar navbar-default" role="navigation">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-brand-centered">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand navbar-brand-left" href="#">
+								<img src="./img/healthix_logo.png" alt="Logo">
+							</a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="navbar-brand-centered">
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+									<a href="#">How it works</a>
+								</li>
+								<li>
+									<a href="#">About Us</a>
+								</li>
+								<li>
+									<a href="#">Why Healthix</a>
+								</li>
+								<li>
+									<a href="#">Our Partners</a>
+								</li>
+								<li>
+									<a href="#">Contact Us</a>
+								</li>
+							</ul>
+						</div>
+						<!-- /.navbar-collapse -->
+					</div>
+					<!-- /.container-fluid -->
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!--Home page style-->
+
+	<!-- Sections -->
+	<section id="hero" class="">
+		<div class="hero_overlay">
 			<div class="container">
-				<div class="row nav-wrapper">
-					<div class="col-md-6 col-sm-6 col-xs-6 text-left">
-						<a href="#">ROAM</a>
-					</div>
-					<div class="col-md-6 col-sm-6 col-xs-6 text-right navicon">
-						<p></p>
-						<a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#">
-							<span></span>
-						</a>
-					</div>
-				</div>
-				<div class="row hero-content">
-					<div class="col-md-12">
-						<h1 class="animated fadeInDown">Karibu Kenya</h1>
-						<p class="animated fadeInDown col-md-12">Vast savannahs peppered with immense herds of wildlife. Snow-capped equatorial mountains. Traditional peoples who bring soul and colour to the earth. Welcome to Kenya.</p>
-						<a href="#about" class="learn-btn animated fadeInUp">Learn more
-							<i class="fa fa-arrow-down"></i>
-						</a>
+				<div class="hero_content">
+					<h2>Connecting Healthcare Players</h2>
+					<p>Our simple, stress-free platform connects the different Healthcare players to ease business processes.</p>
+					<div class="hero-btn">
+						<a href="" class="btn btn-md">Learn More</a>
 					</div>
 				</div>
 			</div>
-		</section>
-	</header>
+			<!-- /container -->
+		</div>
+	</section>
 
-
-
-
-	<div class="overlay overlay-boxify">
-		<nav>
-			<ul>
-				<li>
-					<a href="#about">
-						<i class="fa fa-heart"></i>About</a>
-				</li>
-				<li>
-					<a href="#features">
-						<i class="fa fa-flash"></i>Features</a>
-				</li>
-			</ul>
-			<ul>
-				<li>
-					<a href="#screenshots">
-						<i class="fa fa-desktop"></i>Screenshots</a>
-				</li>
-				<li>
-					<a href="#download">
-						<i class="fa fa-download"></i>Download</a>
-				</li>
-			</ul>
-		</nav>
+	<div>
+			<div id="root"></div>
 	</div>
 
-	<div id="root"></div>
 
 
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="js/min/toucheffects-min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="js/flickity.pkgd.min.js"></script>
-	<script src="js/jquery.fancybox.pack.js"></script>
-	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="js/retina.js"></script>
-	<script src="js/waypoints.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/min/scripts-min.js"></script>
-	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-	<script>
-		(function (b, o, i, l, e, r) {
-			b.GoogleAnalyticsObject = l;
-			b[l] || (b[l] =
-				function () {
-					(b[l].q = b[l].q || []).push(arguments)
-				});
-			b[l].l = +new Date;
-			e = o.createElement(i);
-			r = o.getElementsByTagName(i)[0];
-			e.src = '//www.google-analytics.com/analytics.js';
-			r.parentNode.insertBefore(e, r)
-		}(window, document, 'script', 'ga'));
-		ga('create', 'UA-XXXXX-X');
-		ga('send', 'pageview');
-	</script>
+	<!--Footer-->
+	<footer id="footer" class="">
+		<div class="container">
+			<div class="copyright">
+				<small class="wow zoomIn" data-wow-duration="1s"> Copyright &copy; Roam Kenya. All Rights Reserved</small>
+			</div>
+		</div>
+		<!-- End footer bottom -->
+	</footer>
 
-	<!--Avoid DOM Flickering on State Change-->
-	<script type="text/javascript">
-		(function(B,C){B[C]=B[C].replace(/bnojsb/,'js')})(document.documentElement,'className');
-</script>
+
+	<script src="js/vendor/jquery-1.11.2.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
