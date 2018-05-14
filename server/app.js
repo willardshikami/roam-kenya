@@ -1,11 +1,19 @@
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
-
+const schema = require('./schema/schema');
+const mongoose = require('mongoose');
 
 const app = express();
 
-app.use('/graphql', graphqlHTTP({
+//connect to Mlab
+mongoose.connect('mongodb://shikami:shikami@ds251179.mlab.com:51179/roamkenya');
+mongoose.connection.once('open', () => {
+  console.log('connected to DB');
+})
 
+app.use('/graphql', graphqlHTTP({
+  schema,
+  graphiql: true
 }));
 
 app.listen(4000, () => {
